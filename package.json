@@ -1,0 +1,22 @@
+{
+  "name": "guide-route-saaq",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Condensé interactif du Guide de la route SAAQ – révision + quiz pour l'examen théorique du permis classe 5 (Québec)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "svgo": "^4.0.1",
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.1"
+  }
+}

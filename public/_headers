@@ -1,0 +1,32 @@
+# En-têtes pour Netlify / Cloudflare Pages (copié tel quel dans dist/).
+# Sécurité + mise en cache optimisée pour passage à l'échelle (CDN).
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), interest-cohort=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests
+
+# Assets hachés par Vite : immuables, cache 1 an
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Panneaux SVG : cache long mais revalidable
+/signs/*
+  Cache-Control: public, max-age=604800
+
+/icon-*.svg
+  Cache-Control: public, max-age=604800
+/favicon.svg
+  Cache-Control: public, max-age=604800
+
+# Le service worker et l'app shell doivent toujours être revalidés
+/sw.js
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache

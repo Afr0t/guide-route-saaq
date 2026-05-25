@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0d1b2a" />
+    <meta name="description" content="Condensé du Guide de la route SAAQ + quiz interactif pour réussir l'examen théorique du permis classe 5 au Québec." />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <!-- La CSP est injectée au build uniquement (voir vite.config.js), car
+         script-src 'self' casserait le HMR de Vite en développement.
+         Les en-têtes HTTP complets sont dans public/_headers et vercel.json. -->
+    <title>Guide de la route – Examen SAAQ</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
