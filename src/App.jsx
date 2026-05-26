@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { chapters } from "./data/chapters.js";
 import { loadJSON, saveJSON } from "./lib/storage.js";
+import { SUPPORT_URL, SUPPORT_LABEL } from "./config.js";
 import ReadView from "./components/ReadView.jsx";
 import ProfileMenu from "./components/ProfileMenu.jsx";
 
@@ -179,6 +180,19 @@ export default function App({ profileApi }) {
       </main>
 
       <footer className="app-footer">
+        {SUPPORT_URL && (
+          <div className="support-row">
+            <a
+              className="support-link"
+              href={SUPPORT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {SUPPORT_LABEL}
+            </a>
+            <div className="support-note">Gratuit et sans pub — un café aide à le garder vivant 🙏</div>
+          </div>
+        )}
         Condensé basé sur le <em>Guide de la route</em> SAAQ (4<sup>e</sup>{" "}
         édition). Consulter{" "}
         <a href="https://saaq.gouv.qc.ca" target="_blank" rel="noopener noreferrer">

@@ -1,0 +1,8 @@
+# Affiche le bouton « Sponsor » en haut du dépôt GitHub.
+# Décommente et renseigne la ou les plateformes que tu utilises.
+
+# github: [tonpseudo]            # GitHub Sponsors
+# ko_fi: tonpseudo               # Ko-fi
+# buy_me_a_coffee: tonpseudo     # Buy Me a Coffee
+# patreon: tonpseudo             # Patreon
+# custom: ["https://paypal.me/tonpseudo"]
