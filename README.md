@@ -1,5 +1,18 @@
 # 🚘 Guide de la route – Examen SAAQ
 
+> Révision interactive et **gratuite** pour l'examen théorique du permis de conduire **classe 5** au Québec.
+
+### ▶️ Application en ligne : **https://afr0t.github.io/guide-route-saaq/**
+
+[![Déploiement](https://github.com/Afr0t/guide-route-saaq/actions/workflows/deploy.yml/badge.svg)](https://github.com/Afr0t/guide-route-saaq/actions/workflows/deploy.yml)
+[![Licence MIT](https://img.shields.io/badge/Licence-MIT-blue.svg)](#licence)
+[![PWA hors-ligne](https://img.shields.io/badge/PWA-hors--ligne-5a0fc8.svg)](#performance--passage-à-léchelle)
+[![Buy Me a Coffee](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F-Encourager-ff5e8a.svg)](https://www.buymeacoffee.com/stayfocus)
+
+Installe-la sur ton téléphone (« Ajouter à l'écran d'accueil ») et révise **hors-ligne**, sans pub, sans compte, sans tracking.
+
+---
+
 Application web pour réviser l'examen théorique du permis de conduire classe 5 au Québec. Condensé interactif du *Guide de la route* SAAQ (4ᵉ édition, 2024) avec trois modes :
 
 - **📖 Lecture** — 7 chapitres, 100+ sections repliables, avec recherche par chapitre. **97 panneaux SVG sur disque** (78 SAAQ officiels avec leur code P-010, D-040-1, T-070-1-50 ; 6 feux MUTCD ; 1 cône StVO ; 1 macle HOV ; 11 dispositifs MTQ Québec générés). Plus aucun rendu inline — tout passe par `<img src="signs/...svg">`.
@@ -204,6 +217,14 @@ Bundle initial (gzip) : `react` ~45 kB + app ~28 kB + CSS ~3 kB. Quiz/Flash ~2-3
 - Liens externes en `rel="noopener noreferrer"`. Pas de `dangerouslySetInnerHTML`. Entrée de recherche échappée par React (aucune injection possible).
 
 Les configs d'hébergement (`netlify.toml`, `vercel.json`, `public/_headers`) appliquent automatiquement cache + sécurité sur Netlify, Vercel et Cloudflare Pages.
+
+## ❤️ Soutenir le projet
+
+L'app est gratuite, open source, sans pub ni tracking. Si elle t'a aidé à décrocher ton permis, tu peux offrir un café :
+
+**☕ https://www.buymeacoffee.com/stayfocus**
+
+Le lien est configurable dans `src/config.js` (`SUPPORT_URL`), et `.github/FUNDING.yml` active le bouton « Sponsor » du dépôt.
 
 ## Licence
 
